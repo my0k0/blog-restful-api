@@ -1,0 +1,24 @@
+require('dotenv').config()
+const { 
+  PORT, 
+  MONGODB_URI, 
+  JWT_SECRET, 
+  EMAIL_ACC, 
+  EMAIL_PASS,
+  AWS_ACCESS_KEY,
+  AWS_SECRET_ACCESS_KEY,
+  AWS_BUCKET_NAME,
+  AWS_REGION,
+ } = process.env
+
+module.exports = {
+  PORT,
+  MONGODB_URI,
+  JWT_SECRET,
+  EMAIL: EMAIL_ACC,
+  EMAIL_PASS,
+  AWS_ACCESS_KEY,
+  AWS_SECRET_ACCESS_KEY,
+  AWS_BUCKET_NAME,
+  AWS_REGION,
+}
